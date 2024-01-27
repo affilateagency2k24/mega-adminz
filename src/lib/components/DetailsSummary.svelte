@@ -7,7 +7,7 @@
 
   $: hacks = $hacksList;
   $: mobileClicks=$clicksList.filter((c)=>c.device==='Mobile')
-  $: desktopClicks=$clicksList.filter((c)=>c.device==='Desktp')
+  $: desktopClicks=$clicksList.filter((c)=>c.device==='Desktop')
   async function showhackView() {
     console.log("hacks to show", hacks, $hacksList);
     $detailsShow = true;
@@ -98,7 +98,7 @@
     flex: 0 0 auto;
     padding: 0;
     margin: 0;
-    font: 400 16px Inter;
+    font: 400 15px Inter;
     color: rgba(255, 255, 255, 1);
   }
   .p-style-number {

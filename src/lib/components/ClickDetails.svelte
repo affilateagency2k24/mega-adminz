@@ -8,6 +8,8 @@
   import { user } from "$lib/stores/user-store.js";
   export let clicks;
 
+
+
 </script>
 
 <div class="item">
@@ -35,7 +37,7 @@
 
   .wrapped {
     display: flex;
-    padding: 1ch 2ch;
+    padding: 0 1ch;
     flex: 1;
     overflow-x: auto;
   }

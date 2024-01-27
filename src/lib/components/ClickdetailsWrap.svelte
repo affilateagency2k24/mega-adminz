@@ -9,7 +9,7 @@
 
 
 
-  $: linkclicks = $clicksList;
+  $: linkclicks = $clicksList.filter((c)=>c.hostname.includes(domain))
 
   $: console.log("linkclicks", linkclicks);
 </script>

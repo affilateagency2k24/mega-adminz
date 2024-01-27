@@ -22,6 +22,7 @@
     padding: 4px 6px;
     border: 1px solid gray;
     border-radius: 5px;
+    opacity: 75%;
   }
   .oneline {
     display: flex;
