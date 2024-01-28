@@ -12,7 +12,10 @@
   export let path;
 
 
-  $: hacks = $hacksList.filter((e)=>e.includes(domain));
+  $: hacks = $hacksList.filter((e)=>{
+    console.log('$hacksList.filter',e)
+    e.hostname.includes(domain)
+  });
   $: latesthacks = hacks.filter((el) => el.timestamp > $user.lastChecked);
 
 
